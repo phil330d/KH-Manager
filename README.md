@@ -1,3 +1,5 @@
+TODO: Button um alle Krankenhäuser anzuzeigen nicht verstecken
+
 # KH-Manager
 Krankenhaus-Manager Addon für LSS (https://www.leitstellenspiel.de/)
 
