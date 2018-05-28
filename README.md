@@ -1,2 +1,2 @@
 # KH-Manager
-Krankenhaus-Manager Addon für LSS
+Krankenhaus-Manager Addon für LSS (https://www.leitstellenspiel.de/)
