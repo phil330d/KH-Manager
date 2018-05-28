@@ -10,9 +10,6 @@
 // ==/UserScript==
 
 
-//TODO WENN EIGENES KRANKENHAUS -> KEINE PROZENTZAHl!
-
-
 (function($) {
     'use strict';
     function filter() {
