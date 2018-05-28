@@ -23,7 +23,7 @@
                         'td:nth-child(4)').text() : el.find(
                         ':nth-child(5)').text()).trim() === "Ja";
 
-            if (beds < 1 || !elegible || (!(abgabe === ("10 %")) && !(abgabe === "Ja"))) {
+            if (beds < 1 || !elegible || (!(abgabe === ("10 %") || abgabe === ("0 %")) && !(abgabe === "Ja"))) {
                 el.hide();
             } else {
                 el.show();
