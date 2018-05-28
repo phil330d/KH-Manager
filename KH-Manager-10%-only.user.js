@@ -9,10 +9,6 @@
 //@run           document-start
 // ==/UserScript==
 
-
-//TODO WENN EIGENES KRANKENHAUS -> KEINE PROZENTZAHl!
-
-
 (function ($) {
     'use strict';
     function filter() {
@@ -20,12 +16,13 @@
             var el = $(this);
             var beds = parseInt(el.find('td:nth-child(3)').text().trim());
             var abgabe = el.find('td:nth-child(4)').text().trim();
-            
+
             var elegible = ((el.find(':nth-child(4)').text()
                     .trim().indexOf('%') === -1) ? el.find(
                         'td:nth-child(4)').text() : el.find(
                         ':nth-child(5)').text()).trim() === "Ja";
-            if (beds < 1 || !elegible || !(abgabe === ("10 %"))) {
+
+            if (beds < 1 || !elegible || (!(abgabe === ("10 %")) && !(abgabe === "Ja"))) {
                 el.hide();
             } else {
                 el.show();
