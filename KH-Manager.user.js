@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         KH-Filter
-// @version      1.0
+// @version      1.1
 // @description  Filtert alle nicht geeigneten Krankenhäuser
 // @author       phil330d
 // @include      *://www.leitstellenspiel.de/
@@ -17,6 +17,7 @@
             var el = $(this);
             var beds = parseInt(el.find('td:nth-child(3)').text().trim());
             var percent = el.find('td:nth-child(4)').text.trim();
+            var arrow = el.find('td:nth-child(1)').text().trim();
 
             var elegible = ((el.find(':nth-child(4)').text()
                     .trim().indexOf('%') === -1) ? el.find(
@@ -27,6 +28,8 @@
             } else {
                 el.show();
             }
+            
+            if(arrow === "↓") el.show();
         });
     }
 
