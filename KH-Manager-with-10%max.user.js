@@ -6,7 +6,7 @@
 // @include      *://www.leitstellenspiel.de/
 // @include      *://www.leitstellenspiel.de/*
 // @grant        none
-//@run           document-start
+// @run           document-start
 // ==/UserScript==
 
 
