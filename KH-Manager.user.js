@@ -16,7 +16,7 @@
         $('.col-md-9 tbody > tr').each(function() {
             var el = $(this);
             var beds = parseInt(el.find('td:nth-child(3)').text().trim());
-            var percent = el.find('td:nth-child(4)').text.trim();
+            var percent = el.find('td:nth-child(4)').text().trim();
             var arrow = el.find('td:nth-child(1)').text().trim();
 
             var elegible = ((el.find(':nth-child(4)').text()
